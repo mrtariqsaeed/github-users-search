@@ -1,0 +1,23 @@
+.oopsPage {
+    padding: 150px;
+}
+
+.oopsPage h1 {
+    font-size: 80px;
+    color: #999;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.oopsPage h3 {
+    font-size: 50px;
+    color: #999;
+    font-weight: 200;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.oopsPage button {
+    margin: 0 auto;
+    display: block;
+}

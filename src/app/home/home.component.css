@@ -1,0 +1,52 @@
+.homePage {
+    max-width: 500px; 
+    margin: 50px auto 0px auto;
+    padding-bottom: 50px;
+}
+
+.searchBTN {
+    padding-right: 50px!important; 
+    padding-left: 50px !important; 
+    text-transform: uppercase; 
+    margin: 0 auto 50px auto;
+    display: block;
+}
+
+.searchCount {
+    text-align: center; 
+    color: #666;
+    text-transform: uppercase;
+}
+
+.cardThumbnail {
+    width: 150px; 
+    padding: 10px; 
+    box-sizing: border-box;
+}
+
+.cardInfo {
+    float: right;
+    width:330px; 
+    padding: 10px; 
+    box-sizing: border-box;
+}
+
+.cardsContainer {
+    width: 100%;
+}
+
+.cardsContainer::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.loadingContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1000;
+}

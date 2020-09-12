@@ -1,0 +1,12 @@
+header {
+    min-height: 100px;
+    padding: 90px 15px 15px 15px;
+    box-sizing: border-box;
+    background-color: #673ab7;
+}
+header h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: 200;
+}
+

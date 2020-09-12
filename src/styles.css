@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #f7f7f7;}
+
+mat-card {
+    float: left;
+    border-top: 5px solid #673ab7;
+    margin: 10px 9.9px !important;
+    padding: 0 !important;
+    border-radius: 0!important;
+    width: 230px !important;
+}
+mat-card-content {
+    padding: 10px !important;
+}
+mat-spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
