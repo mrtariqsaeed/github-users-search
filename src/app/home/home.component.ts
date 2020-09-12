@@ -70,7 +70,7 @@ export class HomeComponent implements OnInit {
     this.getFollowersCount(temp)
   }
 
-  /* Gets the followers number of each user */
+  /* Gets the followers count of each user */
   async getFollowersCount(temp: User[]) {
     let calls = []
 
@@ -80,6 +80,25 @@ export class HomeComponent implements OnInit {
           .toPromise()
           .then((data: any[]) => {
             user.followers_url = data.length == 30 ? String(data.length) + '+' : String(data.length)
+          })
+          .catch(err => console.log(err))
+      )
+    })
+
+    await Promise.all(calls)
+    this.getReposCount(temp)
+  }
+
+  /* Gets the Repos count of each user */
+  async getReposCount(temp: User[]) {
+    let calls = []
+
+    temp.forEach((user: User) => {
+      calls.push(
+        this.usersService.getReposCount(user.repos_url)
+          .toPromise()
+          .then((data: any[]) => {
+            user.repos_url = data.length == 30 ? String(data.length) + '+' : String(data.length)
           })
           .catch(err => console.log(err))
       )

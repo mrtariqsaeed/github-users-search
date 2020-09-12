@@ -32,4 +32,7 @@ export class UsersService {
   getFollowersCount(url: string): Observable<any[]> {
     return this.http.get<any[]>(url)
   }
+  getReposCount(url: string): Observable<any[]> {
+    return this.http.get<any[]>(url)
+  }
 }
