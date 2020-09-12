@@ -81,7 +81,7 @@ export class HomeComponent implements OnInit {
           .then((data: any[]) => {
             user.followers_url = data.length == 30 ? String(data.length) + '+' : String(data.length)
           })
-          .catch(err => console.log(err))
+          .catch(err => user.followers_url = '')
       )
     })
 
@@ -100,7 +100,7 @@ export class HomeComponent implements OnInit {
           .then((data: any[]) => {
             user.repos_url = data.length == 30 ? String(data.length) + '+' : String(data.length)
           })
-          .catch(err => console.log(err))
+          .catch(err => user.repos_url = '')
       )
     })
 

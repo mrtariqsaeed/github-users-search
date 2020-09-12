@@ -42,8 +42,8 @@
                 <mat-card-content>
                     <h3><a [href]='user.html_url' style='color: #666' target='_blank'>{{ user.login }}</a></h3>
                     <b>Score: </b>{{ user.score }}<br>
-                    Followers: {{ user.followers_url }}<br>
-                    Repos: {{ user.repos_url }}<br>
+                    <ng-container *ngIf='user.followers_url !== ""'>Followers: {{ user.followers_url }}<br></ng-container>
+                    <ng-container *ngIf='user.repos_url !== ""'>Repos: {{ user.repos_url }}<br></ng-container>
                 </mat-card-content>
             </mat-card>           
         </div>
